@@ -21,9 +21,11 @@ export class PhotoEditorComponent implements OnInit {
   hasBaseDropZoneOver = false;
   baseUrl = environment.apiUrl;
   memberChange = output<Member>();
+
   ngOnInit(): void {
     this.initializeUploader();
   }
+
   fileOverBase(e: any) {
     this.hasBaseDropZoneOver = e;
   }

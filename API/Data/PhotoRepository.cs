@@ -1,8 +1,8 @@
-﻿﻿using API.Entities;
+﻿using API.Entities;
 using API.Interfaces;
 using Microsoft.EntityFrameworkCore;
-namespace API.Data;
 
+namespace API.Data;
 public class PhotoRepository(DataContext context) : IPhotoRepository
 {
     public async Task<Photo?> GetPhotoById(int id)
